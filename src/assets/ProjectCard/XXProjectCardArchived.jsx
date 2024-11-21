@@ -1,4 +1,4 @@
-export default function ProjectCard(props) {
+export default function XXProjectCard(props) {
     const {project} = props;
     return (
       <div className='flex flex-col bg-white rounded-lg p-1 border border-black w-fit'>

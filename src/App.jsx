@@ -1,25 +1,21 @@
 import { useState } from 'react'
-import ProjectCard from './assets/ProjectCard'
-import ProjectCard2 from './assets/ProjectCard2'
+import ProjectCard from './assets/ProjectCard/ProjectCard'
 
 function App() {
 
   return (
-    <>
-      <div className="w-full border flex flex-col items-center">
-      <nav className="bg-emerald-500 w-full max-w-7xl h-16">
-      dfmf;m
-      </nav>
+    <div className='h-screen w-full flex flex-col items-center'>
+      <div className="w-full max-w-7xl border flex flex-col items-center h-screen">
+
       <div className='m-20 flex flex-wrap justify-center'>
-        <ProjectCard2></ProjectCard2>
-        <ProjectCard2></ProjectCard2>
-        <ProjectCard2></ProjectCard2>
-        <ProjectCard2></ProjectCard2>
-        <ProjectCard2></ProjectCard2>
- 
+        <ProjectCard tools={['html5']}></ProjectCard>
+        <ProjectCard tools={['css3']}></ProjectCard>
+        <ProjectCard tools={['react']}></ProjectCard>
+        <ProjectCard tools={['html5']}></ProjectCard>
+        <ProjectCard tools={['html5']}></ProjectCard>
       </div>
       </div>
-    </>
+    </div>
   )
 }
 
