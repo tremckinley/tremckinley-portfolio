@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ProjectCard from './assets/ProjectCard'
+import ProjectCard2 from './assets/ProjectCard2'
 
 function App() {
 
@@ -10,11 +11,12 @@ function App() {
       dfmf;m
       </nav>
       <div className='m-20 flex flex-wrap justify-center'>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
+        <ProjectCard2></ProjectCard2>
+        <ProjectCard2></ProjectCard2>
+        <ProjectCard2></ProjectCard2>
+        <ProjectCard2></ProjectCard2>
+        <ProjectCard2></ProjectCard2>
+ 
       </div>
       </div>
     </>
