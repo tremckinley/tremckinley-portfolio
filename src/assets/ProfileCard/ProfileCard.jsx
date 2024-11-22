@@ -3,7 +3,7 @@ import ViewSelector from "./ViewSelector"
 export default function ProfileCard(props) {
     const {state} = props
     return (
-        <div className="flex flex-col items-center p-4 text-gray-600 border shadow-xl banner bg-gradient-to-t md:bg-gradient-to-r from-[#C9E6C090] from-60% to-[#999999]">
+        <div className="flex flex-col items-center p-4 text-gray-600 border shadow-xl banner bg-gradient-to-t md:bg-gradient-to-r from-[#c9e6c070] from-70% to-[#999999]">
             <div className="flex flex-col md:flex-row items-center md:justify-start w-full">
             <img className="rounded-[40%] max-h-24 md:max-h-40 ml-10 border border-gray-500 center" alt="profile image of me" src="src\assets\images\profile photo.jpeg"/>
             <div className="ml-4 pl-3 text-center md:text-left">
