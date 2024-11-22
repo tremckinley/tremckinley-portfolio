@@ -4,7 +4,7 @@ import ProjectCard from './assets/ProjectCard/ProjectCard'
 function App() {
 
   return (
-    <div className='h-screen w-full flex flex-col items-center'>
+    <div className='h-screen w-full flex flex-col items-center bg-[#C9E6C050]'>
       <div className="w-full max-w-7xl border flex flex-col items-between h-screen">
       <div className='h-40 border border-green-900 mb-20 p-4'>
         
