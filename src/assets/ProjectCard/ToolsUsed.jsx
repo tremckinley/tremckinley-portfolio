@@ -6,7 +6,7 @@ export default function ToolsUsed(props) {
     return (
         <div className="flex w-full">
             {tools && tools.map((tool) => {
-               return <i className={"mr-1 text-lg fa-brands "+toolMaker(tool)}></i>
+               return <i key={tool} className={"mr-1 text-lg fa-brands "+toolMaker(tool)}></i>
             })}
         </div>
     )

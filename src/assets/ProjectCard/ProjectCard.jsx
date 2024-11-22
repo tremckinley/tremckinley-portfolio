@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
     <div className="flex flex-col m-2 border border-stone-500 rounded-lg max-w-80  overflow-clip bg-neutral-50">
       <div className="h-24 w-full mr-4 border-b flex">
       <button href={repoUrl}><i className=" fa fa-github text-black text-lg m-1"></i></button>
-      <img className="h-full w-full flex-1 border" src="src/Untitled.jpg" />
+      <img className="h-full w-full flex-1 border" src="src\assets\images\default-bg.jpg" />
       </div>
       <div className="px-4 py-2">
       <ToolsUsed tools={tools} />
