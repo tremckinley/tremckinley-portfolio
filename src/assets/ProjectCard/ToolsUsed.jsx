@@ -4,9 +4,12 @@ export default function ToolsUsed(props) {
         return ("fa-"+tool)
     }
     return (
-        <div className="flex w-full">
+        <div className="flex w-full text-slate-500">
             {tools && tools.map((tool) => {
-               return <i key={tool} className={"mr-1 text-lg fa-brands "+toolMaker(tool)}></i>
+                if (tool=="code") {
+                    return <i key={tool} className={"fa fa-code"}></i>
+                } else {
+               return <i key={tool} className={"mr-2 text-lg fa-brands "+toolMaker(tool)}></i> }
             })}
         </div>
     )

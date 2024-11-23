@@ -8,8 +8,8 @@ function App() {
   const [view, setView] = useState("projects");
 
   return (
-    <div className="h-fit w-full flex flex-col items-center bg-neutral">
-      <div className="w-full max-w-7xl border flex flex-col items-between h-fit lg:h-screen bg-[#C9E6C060]">
+    <div className="h-fit w-full flex flex-col items-center bg-neutral font-body">
+      <div className="w-full max-w-7xl border flex flex-col items-between h-fit bg-emerald-50">
         <ProfileCard state={{ view, setView }} />
         <div className="p-10 md:p-20 md:pb-0">
           {
@@ -17,7 +17,7 @@ function App() {
             <motion.div 
             initial={{y:-100, opacity: 0}} 
             animate={{y:0, opacity: 1}}
-            transition={{duration: .5}} 
+            transition={{duration: .2}} 
             className="flex flex-wrap justify-center"
             >
               <AboutSection />
@@ -29,7 +29,7 @@ function App() {
             <motion.div 
             initial={{y:-100, opacity: 0}} 
             animate={{y:0, opacity: 1}}
-            transition={{duration: .5}} 
+            transition={{duration: .3}} 
             className="w-full"
             >
               <ProjectSection />
