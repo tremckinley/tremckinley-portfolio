@@ -8,10 +8,10 @@ function App() {
   const [view, setView] = useState("projects");
 
   return (
-    <div className="h-fit w-full flex flex-col items-center bg-neutral font-body">
+    <div className="h-fit w-full flex flex-col items-center bg-gray-500 font-body">
       <div className="w-full max-w-7xl border flex flex-col items-between h-fit bg-emerald-50">
         <ProfileCard state={{ view, setView }} />
-        <div className="p-10 md:p-20 md:pb-0">
+        <div className="p-10 md:pb-0">
           {
           (view == "bio" || view == "all") && (
             <motion.div 

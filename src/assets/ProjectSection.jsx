@@ -3,8 +3,8 @@ import { projects } from "./projects";
 
 export default function ProjectSection() {
     return (
-        <section className="my-4">
-        <h3 className="header">My Projects:</h3>
+        <section>
+        <h3 className="header text-gray-700">My Projects:</h3>
         <div className="flex flex-wrap justify-center mt-10">
             {!projects ? <p>Error: Projects not loaded</p> : 
                 projects.map((project) => {
