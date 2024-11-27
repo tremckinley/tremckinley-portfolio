@@ -8,8 +8,8 @@ function App() {
   const [view, setView] = useState("projects");
 
   return (
-    <div className="h-fit w-full flex flex-col items-center bg-gray-500 font-body">
-      <div className="w-full max-w-7xl border flex flex-col items-between h-fit bg-emerald-50">
+    <div className="h-screen min-h-fit w-full flex flex-col items-center bg-gray-500 font-body">
+      <div className="w-full max-w-7xl flex flex-col items-between min-h-fit h-full shadow-xl shadow-gray-800 bg-emerald-50">
         <ProfileCard state={{ view, setView }} />
         <div className="p-10 md:pb-0">
           {

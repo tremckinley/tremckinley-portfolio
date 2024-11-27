@@ -8,3 +8,11 @@
     margin-bottom: 10px;
     
 }
+
+.bio-background {
+    background-image: url("https://wreg.com/wp-content/uploads/sites/18/2022/10/GettyImages-902966078.jpg?w=960&h=540&crop=1");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #00000050;
+    color: rgb(245 245 244)
+}

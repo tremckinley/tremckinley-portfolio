@@ -14,7 +14,7 @@ export default function ViewSelector(props) {
                 onClick={() => state.setView("projects")}
             >
                 <div>
-                    Projects
+                    Products
                 </div>
             </button>
             {/* <button key="resume" className={"text-center px-2 rounded-lg m-[1px] text-black border-gray-800 flex-1 "+ (state.view == "resume" ? "bg-white border font-semibold" : "")}

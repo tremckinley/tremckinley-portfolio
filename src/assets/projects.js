@@ -11,7 +11,7 @@ export const projects = [
     {
       title: "Focus Breathing Timer",
       desc: "An original HTML/CSS/JS project. Warmed up my vanilla web dev skills by creating a mindful breathing timer in a Codecademy code space.",
-      tools: ["html5", "css3", "javascript", "code"],
+      tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/focus-breathing-timer",
       liveUrl: "https://www.codecademy.com/workspaces/671bb94c26499240abf81e85",
       imageUrl: "src/assets/images/screenshots/focusbreathing.png"
@@ -19,7 +19,7 @@ export const projects = [
     {
       title: "Fright Night Game",
       desc: "A customization of a Codecademy lesson. Used principles from a DOM manipulation lesson to add game functionality. *This game was recognized in a Codecademy Halloween competition.",
-      tools: ["html5", "css3", "javascript", "code"],
+      tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/datenightgame/tree/fright_night",
       liveUrl: "https://frightnightgame.vercel.app/",
       imageUrl: "src/assets/images/screenshots/frightnight.png"
