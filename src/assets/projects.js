@@ -5,7 +5,7 @@ export const projects = [
       tools: ["react", "css3", "figma"],
       repoUrl: null,
       liveUrl: "https://space-baby-bay.vercel.app/",
-      imageUrl: "assets/public/space-baby-bay-vercel-app-1024x768desktop-b8d584 (1).png"
+      imageUrl: "/space-baby-bay-vercel-app-1024x768desktop-b8d584 (1).png"
 
     },
     {
@@ -14,7 +14,7 @@ export const projects = [
       tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/focus-breathing-timer",
       liveUrl: "https://www.codecademy.com/workspaces/671bb94c26499240abf81e85",
-      imageUrl: "assets/public/focusbreathing.png"
+      imageUrl: "/focusbreathing.png"
     },
     {
       title: "Fright Night Game",
@@ -22,7 +22,7 @@ export const projects = [
       tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/datenightgame/tree/fright_night",
       liveUrl: "https://frightnightgame.vercel.app/",
-      imageUrl: "assets/public/frightnight.png"
+      imageUrl: "/frightnight.png"
     },
     {
       title: "Rica's Plants Capstone",
