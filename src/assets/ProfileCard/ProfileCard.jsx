@@ -4,9 +4,9 @@ export default function ProfileCard(props) {
     const { state } = props
     return (
         <div className="flex flex-col items-center p-4 text-gray-600 shadow-xl bg-gradient-to-t md:bg-gradient-to-r from-[#c9e6c070] from-70% to-gray-400">
-            <div className="md:ml-4 flex flex-col md:flex-row items-center md:justify-start w-full">
+            <div className="md:ml-28 flex flex-col md:flex-row items-center md:justify-start w-full">
                 <div className="flex flex-col md:flex-row-reverse items-center">
-                    <img className="rounded-[40%] max-h-24 md:max-h-24 border border-gray-500 center" alt="profile image of me" src="src\assets\images\profile photo.jpeg" />
+                    <img className="rounded-[40%] max-h-24 md:max-h-24 border border-gray-500 center" alt="profile image of me" src="public\images\profile photo.jpeg" />
                     <div className="flex md:flex-col md:items-end md:pr-2 justify-between w-24 md:text-xl text-lg">
                         <a href="https://www.linkedin.com/in/tremaine-mckinley/" target="_blank"><i className="hover:text-green-500 fa-brands fa-linkedin"></i></a>
                         <button onClick={() => {
