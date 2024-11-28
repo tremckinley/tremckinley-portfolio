@@ -12,7 +12,6 @@ export default function ProjectSection() {
                     <ProjectCard key={project.title} project={project} />
                 )
                 })
-
             }
 
         </div>
