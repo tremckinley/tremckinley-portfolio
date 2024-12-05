@@ -13,7 +13,7 @@ export const projects = [
       desc: "An original HTML/CSS/JS project. Select a breathing style & amount of time to practice mindfulness.",
       tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/breathing-exercies",
-      liveUrl: "https://focus-breathing-timer.vercel.app/",
+      liveUrl: "https://breathing-exercises.vercel.app/",
       imageUrl: "/focusbreathing.png"
     },
     {
