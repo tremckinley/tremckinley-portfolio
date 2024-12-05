@@ -9,11 +9,11 @@ export const projects = [
 
     },
     {
-      title: "Focus Breathing Timer",
-      desc: "An original HTML/CSS/JS project. Warmed up my vanilla web dev skills by creating a mindful breathing timer in a Codecademy code space.",
+      title: "Breathing Exercises",
+      desc: "An original HTML/CSS/JS project. Select a breathing style & amount of time to practice mindfulness.",
       tools: ["html5", "css3", "js"],
-      repoUrl: "https://github.com/tremckinley/focus-breathing-timer",
-      liveUrl: "https://www.codecademy.com/workspaces/671bb94c26499240abf81e85",
+      repoUrl: "https://github.com/tremckinley/breathing-exercies",
+      liveUrl: "https://focus-breathing-timer.vercel.app/",
       imageUrl: "/focusbreathing.png"
     },
     {
