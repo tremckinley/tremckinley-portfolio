@@ -11,7 +11,9 @@ export default function ProjectCard(props) {
         <motion.img 
           whileHover={{scale: 1.3}}
           transition={{duration: .2}}
-          className="w-full h-full max-h-44 object-fill" src={project.imageUrl}
+          className="w-full h-full max-h-44 object-fill" 
+          src={project.imageUrl}
+          alt="project screenshot"
         />
         </a>
       </div>
