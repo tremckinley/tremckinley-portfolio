@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
   const { project  } = props;
 
   return (
-    <div className="flex flex-col m-2 border-2 border-stone-500 rounded-lg md:max-w-60 overflow-clip bg-white hover:bg-neutral-100 hover:border-green-500 max-w-96">
+    <div className="flex flex-col m-2 border-2 border-stone-500 rounded-lg md:max-w-60 overflow-clip bg-white hover:bg-neutral-100 hover:border-green-500 max-w-96 shadow-sm shadow-gray-400">
       <div className="max-h-48 w-full mr-4 border-b border-stone-500 flex">
         <a href={project.liveUrl} target="_blank" className="w-full overflow-clip">
         <motion.img 
