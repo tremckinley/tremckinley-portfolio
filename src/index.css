@@ -16,3 +16,10 @@
     background-color: #00000050;
     color: rgb(245 245 244)
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
