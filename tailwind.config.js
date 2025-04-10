@@ -9,6 +9,13 @@ export default {
       fontFamily: {
         'body': ["Montserrat", "sans-serif"],
         'roboto': ['Roboto', "sans-serif"]
+      },
+      colors: {
+        'primary': '#c9e6c070',
+        'secondary': '#001733',
+        'accent': '',
+        'neutral-light': '',
+        'neutral-dark': ''
       }
     },
   },
