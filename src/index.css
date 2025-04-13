@@ -17,6 +17,11 @@
     color: rgb(245 245 244)
 }
 
+.accent {
+    border-color:darkgoldenrod
+    ;
+}
+
 html, body {
     margin: 0;
     padding: 0;

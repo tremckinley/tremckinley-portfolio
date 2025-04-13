@@ -3,10 +3,10 @@ import ViewSelector from "./ViewSelector"
 export default function ProfileCard(props) {
     const { state } = props
     return (
-        <div className="flex flex-col lg:h-72 items-center justify-between p-4 text-gray-600 shadow-xl bg-gradient-to-t lg:bg-gradient-to-l from-zinc-200 from-90% to-amber-100" role="banner">
-            <div className="xl:ml-36 flex flex-col lg:flex-row items-center lg:justify-start w-full">
+        <div className="xl:pl-12 flex flex-col lg:h-72 items-start justify-between p-4 pb-0 text-gray-600 shadow-xl bg-[#dfdfdf]" role="banner border border-gray-500">
+            <div className=" flex flex-col lg:flex-row items-center lg:justify-start w-full">
                 <div className="flex flex-col lg:flex-row-reverse items-center">
-                    <img className="rounded-[40%] max-h-36 lg:max-h-48 border border-gray-500 center" alt="profile image of me" src="/headshot.jpeg" />
+                    <img className="rounded-[40%] max-h-36 lg:max-h-48 border accent" alt="profile image of me" src="/headshot.jpeg" />
                     <div className="flex lg:flex-col lg:items-end lg:pr-2 justify-between w-24 lg:text-3xl text-xl">
                         <a href="https://www.linkedin.com/in/tremaine-mckinley/" target="_blank"><i className="hover:text-white active:text-white fa-brands fa-linkedin" title="Visit LinkedIn page"></i></a>
                         <button title="Email Me - Copy to clipboard" onClick={() => {
@@ -30,7 +30,9 @@ export default function ProfileCard(props) {
                     <h3 className="mt-2 ml-2 text-md lg:text-2xl font-semibold text-black">Let's get to it.</h3>
                 </div>
             </div>
+            
             <ViewSelector state={state} />
+        
         </div>
     )
 }
