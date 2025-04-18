@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --accent: teal
+}
+
 .header {
     font-weight: bold;
     font-size: x-large;
@@ -18,8 +22,13 @@
 }
 
 .accent {
-    border-color:darkgoldenrod
+    border-color: var(--accent)
     ;
+}
+
+.selected-view {
+    border-bottom: 2px solid var(--accent);
+    font-weight: 500;
 }
 
 html, body {
