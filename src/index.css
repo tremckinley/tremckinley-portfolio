@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --accent: teal
+}
+
 .header {
     font-weight: bold;
     font-size: x-large;
@@ -15,6 +19,16 @@
     background-blend-mode: overlay;
     background-color: #00000050;
     color: rgb(245 245 244)
+}
+
+.accent {
+    border-color: var(--accent)
+    ;
+}
+
+.selected-view {
+    border-bottom: 2px solid var(--accent);
+    font-weight: 500;
 }
 
 html, body {
