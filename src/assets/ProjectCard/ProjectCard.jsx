@@ -5,13 +5,13 @@ export default function ProjectCard(props) {
   const { project  } = props;
 
   return (
-    <div className="flex flex-col m-2 border-2 accent rounded-lg md:flex-row md:max-w-2xl overflow-clip bg-white hover:bg-neutral-100 hover:border-green-500 max-w-3xl shadow-sm shadow-gray-400">
+    <div className="flex flex-col m-2 border-2 accent rounded-lg md:flex-row md:max-w-xl overflow-clip bg-white hover:bg-neutral-100 hover:border-accent-secondary max-w-3xl shadow-sm shadow-[peru]">
       <div className=" border-b accent flex">
         <a href={project.liveUrl} target="_blank" className="w-full overflow-clip">
         <motion.img 
           whileHover={{scale: 1.3}}
           transition={{duration: .2}}
-          className="w-full md:min-w-96 h-48 md:min-h-full object-fill md:object-center" 
+          className="w-full md:min-w-60 md:w-60 h-48 md:min-h-full object-fill md:object-center" 
           src={project.imageUrl}
           alt="project screenshot"
         />

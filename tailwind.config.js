@@ -11,11 +11,15 @@ export default {
         'roboto': ['Roboto', "sans-serif"]
       },
       colors: {
-        'primary': '#c9e6c070',
+        'primary': '#c9e6c070 ',
         'secondary': '#001733',
         'accent': '',
         'neutral-light': '',
-        'neutral-dark': ''
+        'neutral-dark': '',
+        'accent': {
+          DEFAULT: 'peru',
+          secondary: 'darkcyan',
+        },
       }
     },
   },

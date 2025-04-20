@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --accent: teal
+    --accent: peru;
+    --accent-secondary: darkcyan;
 }
 
 .header {
@@ -23,8 +24,16 @@
 
 .accent {
     border-color: var(--accent)
-    ;
 }
+
+.contact-icon:active {
+    color: var(--accent-secondary)
+}
+
+.contact-icon:hover {
+    color: var(--accent)
+}
+
 
 .selected-view {
     border-bottom: 2px solid var(--accent);
