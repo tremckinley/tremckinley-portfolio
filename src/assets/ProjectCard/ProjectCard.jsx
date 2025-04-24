@@ -2,7 +2,7 @@ import ToolsUsed from "./ToolsUsed";
 import { motion } from "motion/react";
 
 export default function ProjectCard(props) {
-  const { project  } = props;
+  const { project } = props;
 
   return (
     <div className="flex flex-col m-2 border-2 accent rounded-lg md:flex-row md:max-w-xl overflow-clip bg-white hover:bg-neutral-100 hover:border-accent-secondary max-w-3xl shadow-sm shadow-[peru]">

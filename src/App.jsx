@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProfileCard from "./assets/ProfileCard/ProfileCard";
 import AboutSection from "./assets/AboutSection";
 import ProjectSection from "./assets/ProjectSection";
+import BlogSection from "./assets/BlogSection";
 import { motion } from "motion/react";
 
 function App() {
@@ -32,6 +33,18 @@ function App() {
             className="w-full"
             >
               <ProjectSection />
+            </motion.div> 
+          )
+        }
+                {
+          (view == "blog" || view == "all") && (
+            <motion.div 
+            initial={{y:-100, opacity: 0}} 
+            animate={{y:0, opacity: 1}}
+            transition={{duration: .3}} 
+            className="w-full"
+            >
+            <BlogSection />
             </motion.div> 
           )
         }
