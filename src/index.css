@@ -38,6 +38,8 @@
 .selected-view {
     border-bottom: 2px solid var(--accent);
     font-weight: 500;
+    background-color: #f4f4f5;
+
 }
 
 html, body {
