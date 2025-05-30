@@ -11,13 +11,6 @@ export default function ViewSelector(props) {
                     Biography
                 </div>
             </button>
-            <button key="projects" className={"text-center px-2 m-[1px] text-black  flex-1  rounded-t-sm  shadow "+ (state.view == "projects" ? "selected-view" : "shadow-black/20")}
-                onClick={() => state.setView("projects")}
-            >
-                <div>
-                    Products
-                </div>
-            </button>
             <button key="blog" className={"text-center px-2 m-[1px] text-black flex-1  rounded-t-sm shadow  "+ (state.view == "blog" ? "selected-view" : "shadow-black/20")}
                 onClick={() => state.setView("blog")}
             >
@@ -25,6 +18,13 @@ export default function ViewSelector(props) {
                     Blog
                 </div>
             </button> 
+            <button key="projects" className={"text-center px-2 m-[1px] text-black  flex-1  rounded-t-sm  shadow "+ (state.view == "projects" ? "selected-view" : "shadow-black/20")}
+                onClick={() => state.setView("projects")}
+            >
+                <div>
+                    Products
+                </div>
+            </button>
             {/* <button key="all" className={"text-center px-2 m-[1px] text-black border-gray-800 flex-1 "+ (state.view == "all" ? "selected-view" : "")}
                 onClick={() => state.setView("all")}
             >

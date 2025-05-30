@@ -6,7 +6,7 @@ import BlogSection from "./assets/BlogSection";
 import { motion } from "motion/react";
 
 function App() {
-  const [view, setView] = useState("projects");
+  const [view, setView] = useState("bio");
 
   return (
       <div className="w-full flex flex-col items-between min-h-fit h-[100vh] bg-zinc-100 pt-12">
