@@ -1,6 +1,6 @@
 export default function AboutSection() {
     return (
-        <section className="my-4 p-5 bg-gray-50 border accent rounded-lg -bio-background shadow-sm shadow-gray-400 mb-10">
+        <section className="max-w-4xl my-4 p-5 bg-gray-50 border-2 border-accent-secondary rounded-lg -bio-background shadow-sm shadow-gray-400 mb-10">
         <p>
         I’m a technical problem-solver and self-teaching web developer. I am most passionate about creating innovative solutions that empower communities. With a background in non-profit operations, software administration, IT support, and international business, I thrive at the intersection of technology and civic engagement. 
         <br/><br/>Currently, I’m helping shape the future of Memphis government services as a Business Services Analyst for the Shelby County Division of Planning and Development. My work focuses on configuring and enhancing SaaS platforms to streamline processes, improve accessibility, and drive meaningful change for internal and external customers. No day is the same and I approach every challenge with curiosity, determination, and a diverse toolkit. Previously, I was a Director of Finance & Technology for a local charter school. Beyond my professional roles, I am a lifelong learner with experience living and working abroad. 

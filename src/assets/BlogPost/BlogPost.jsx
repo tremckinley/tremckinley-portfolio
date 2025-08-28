@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export default function BlogPost(props) {
     const {blog} = props;
     return (
-        <div className=" overflow-clip md:w-1/3 w-full m-2 border-2 accent rounded-sm md:flex-row flex-col  bg-[#dfdfdf]/20 hover:bg-accent-secondary/10 hover:border-accent-secondary shadow-sm shadow-[peru]">
+        <div className=" overflow-clip md:w-1/3 w-full m-2 border-2 border-accent-secondary rounded-sm md:flex-row flex-col  bg-[#dfdfdf]/20 hover:bg-accent/10 hover:border-accent shadow-sm shadow-[peru]">
             <div className=" border-b flex">
             <a href={blog.linkUrl} target="_blank" className="w-full overflow-clip max-h-48">
             <motion.img 
@@ -12,7 +12,7 @@ export default function BlogPost(props) {
           transition={{duration: .2}}
           className="w-full md:min-w-60 h-full md:max-h-48 md:object-center" 
           src={blog.imageUrl}
-          alt="project screenshot"
+          alt={blog.imageAlt}
         />
         </a>
         </div>
