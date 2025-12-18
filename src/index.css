@@ -3,23 +3,16 @@
 @tailwind utilities;
 
 :root {
-    --accent: peru;
-    --accent-secondary: darkcyan;
+    --accent: #66bb88;
+    --accent-secondary: #1F3A5F;
 }
+
 
 .header {
     font-weight: bold;
     font-size: x-large;
     margin-bottom: 10px;
-    
-}
 
-.bio-background {
-    background-image: url("https://wreg.com/wp-content/uploads/sites/18/2022/10/GettyImages-902966078.jpg?w=960&h=540&crop=1");
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: #00000050;
-    color: rgb(245 245 244)
 }
 
 .accent {
@@ -31,7 +24,7 @@
 }
 
 .contact-icon:hover {
-    color: var(--accent)
+    color: var(--accent-secondary)
 }
 
 
@@ -42,9 +35,47 @@
 
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-secondary);
+    border-radius: 5px;
+}
+
+/* Firefox */
+* {
+    scrollbar-color: var(--accent-secondary) transparent;
+    scrollbar-width: thin;
+}
+
+/* Utility Classes */
+.card {
+    @apply border-2 border-accent-secondary rounded-lg shadow-sm bg-white;
+}
+
+.card-hover {
+    @apply hover:bg-accent/40 hover:border-accent;
+}
+
+.heading-text {
+    @apply font-roboto font-bold;
+}
+
+.blog-card{
+    @apply rounded-none max-w-sm;
+}

@@ -1,55 +1,38 @@
 import { useState } from "react";
 import ProfileCard from "./assets/ProfileCard/ProfileCard";
-import AboutSection from "./assets/AboutSection";
+import AboutSection from "./assets/AboutSection/AboutSection";
 import ProjectSection from "./assets/ProjectSection";
 import BlogSection from "./assets/BlogSection";
 import { motion } from "motion/react";
+
+const sections = [
+  { id: "bio", Component: AboutSection, className: "flex flex-wrap justify-center" },
+  { id: "projects", Component: ProjectSection, className: "w-full" },
+  { id: "blog", Component: BlogSection, className: "w-full" },
+];
 
 function App() {
   const [view, setView] = useState("bio");
 
   return (
-      <div className="w-full flex flex-col items-between min-h-fit h-[100vh] bg-zinc-100 pt-12">
-        <ProfileCard state={{ view, setView }} />
-        <div className="max-w-7xl mx-auto p-10 md:pb-0">
-          {
-          (view == "bio" || view == "all") && (
-            <motion.div 
-            initial={{y:-100, opacity: 0}} 
-            animate={{y:0, opacity: 1}}
-            transition={{duration: .2}} 
-            className="flex flex-wrap justify-center"
+    <div id="app" className="w-full flex flex-col h-screen overflow-hidden bg-zinc-100">
+      <ProfileCard state={{ view, setView }} />
+      <div id="content" className="w-full flex-1 mx-auto p-10 md:pb-0 overflow-y-auto">
+        {sections.map(({ id, Component, className }) => (
+          (view === id || view === "all") && (
+            <motion.div
+              key={id}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: .3 }}
+              className={className}
             >
-              <AboutSection />
+              <Component />
             </motion.div>
           )
-          }
-        {
-          (view == "projects" || view == "all") && (
-            <motion.div 
-            initial={{y:-100, opacity: 0}} 
-            animate={{y:0, opacity: 1}}
-            transition={{duration: .3}} 
-            className="w-full"
-            >
-              <ProjectSection />
-            </motion.div> 
-          )
-        }
-                {
-          (view == "blog" || view == "all") && (
-            <motion.div 
-            initial={{y:-100, opacity: 0}} 
-            animate={{y:0, opacity: 1}}
-            transition={{duration: .3}} 
-            className="w-full"
-            >
-            <BlogSection />
-            </motion.div> 
-          )
-        }
-        </div>
+        ))}
       </div>
+    </div>
   );
 }
 
