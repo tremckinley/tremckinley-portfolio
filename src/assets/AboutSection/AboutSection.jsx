@@ -3,7 +3,7 @@ import { useState } from "react"
 import Carousel from "../Carousel/Carousel"
 
 export default function AboutSection() {
-    const [view, setView] = useState('bio')
+    const [view, setView] = useState(true)
 
     const carouselItems = [
         {
@@ -25,8 +25,9 @@ export default function AboutSection() {
     ];
 
     return (
-        <div className="flex">
-            <section className="card max-w-6xl my-4 p-5 bg-white shadow-gray-400 mb-10 md:text-lg text-md">
+        <div className="flex flex-col">
+            <h2 className="text-center font-bold text-2xl">Welcome</h2>
+            <section className="card max-w-6xl my-4 p-5 bg-white shadow-gray-400 md:text-lg text-md">
                 <p className="whitespace-pre-line mb-4">
                     {`I’m a technical problem-solver and self-teaching web developer. I am most passionate about creating innovative solutions that empower communities. With a background in non-profit operations, software administration, IT support, and international business, I thrive at the intersection of technology and civic engagement.
 
@@ -38,11 +39,13 @@ export default function AboutSection() {
                     Let’s connect! There's something great we can do together.
                 </p>
             </section>
-            {view === 'photos' && (
+            {/* <h2 className="text-center font-bold text-2xl">Photos</h2>
+            <button onClick={() => setView(!view)} className="text-center font-bold w-24 mx-auto mb-4">{view ? <span>hide <i className="fa fa-angle-down"></i></span> : <span>show <i className="fa fa-angle-right"></i></span>}</button>
+            {view && (
                 <section id="carousel">
                     <Carousel items={carouselItems} />
                 </section>
-            )}
+            )} */}
         </div>
     )
 }
