@@ -4,7 +4,7 @@ export default function ProfileCard(props) {
     const { state } = props
     return (
         <div className="xl:pl-12 flex flex-col lg:h-72 items-start justify-between p-4 pb-0 text-gray-600 shadow-xl bg-[#dfdfdf]" role="banner border border-gray-500">
-            <div className="flex flex-row justify-center items-center w-full">
+            <div className="flex flex-row justify-center md:justify-start items-center w-full">
                 <div className="flex flex-col lg:flex-row-reverse items-center">
                     <img className="rounded-[40%] max-h-28 lg:max-h-48" alt="profile image of me" src="/headshot.jpeg" style={{ boxShadow: "0px 0px 10px var(--accent-secondary)" }} />
                     <div className="flex lg:flex-col lg:items-end lg:pr-2 justify-between w-24 lg:text-3xl text-xl mx-auto lg:mx-0">
