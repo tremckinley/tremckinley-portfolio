@@ -3,7 +3,7 @@ import { useState } from "react"
 import Carousel from "../Carousel/Carousel"
 
 export default function AboutSection() {
-    const [view, setView] = useState('bio')
+    const [view, setView] = useState(true)
 
     const carouselItems = [
         {
@@ -47,11 +47,13 @@ export default function AboutSection() {
                     Let’s connect! There's something great we can do together.
                 </p>
             </section>
-            {view === 'photos' && (
+            {/* <h2 className="text-center font-bold text-2xl">Photos</h2>
+            <button onClick={() => setView(!view)} className="text-center font-bold w-24 mx-auto mb-4">{view ? <span>hide <i className="fa fa-angle-down"></i></span> : <span>show <i className="fa fa-angle-right"></i></span>}</button>
+            {view && (
                 <section id="carousel">
                     <Carousel items={carouselItems} />
                 </section>
-            )}
+            )} */}
         </div>
     )
 }
