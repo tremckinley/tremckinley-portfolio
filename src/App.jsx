@@ -1,15 +1,8 @@
 import { useState } from "react";
 import ProfileCard from "./assets/ProfileCard/ProfileCard";
-import AboutSection from "./assets/AboutSection/AboutSection";
-import ProjectSection from "./assets/ProjectSection";
-import BlogSection from "./assets/BlogSection";
 import { motion } from "motion/react";
+import { sections } from "./utils/sections"
 
-const sections = [
-  { id: "bio", Component: AboutSection, className: "flex flex-wrap justify-center" },
-  { id: "projects", Component: ProjectSection, className: "w-full" },
-  { id: "blog", Component: BlogSection, className: "w-full" },
-];
 
 function App() {
   const [view, setView] = useState("bio");
