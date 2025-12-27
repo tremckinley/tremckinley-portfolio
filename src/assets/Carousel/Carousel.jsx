@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { carouselItems } from "../../utils/carouselItems";
 
-export default function Carousel({ items }) {
+export default function Carousel({ items = carouselItems }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
