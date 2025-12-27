@@ -23,46 +23,39 @@ export default function BioSection() {
                     </p>
                 </section>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl">
-                {/* Core Skills Section */}
-                <section className="w-full max-w-3xl col-span-2">
-                    {skills && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Core Skills</h3>
-                    <div className="flex flex-wrap justify-center gap-3">
-                        {skills.map((skill, index) => (
-                            <span
-                                key={index}
-                                className="px-4 py-2 card text-sm font-medium"
-                            >
-                                {skill}
-                            </span>
-                        ))}
-                    </div></>)}
-                </section>
+                    {/* Core Skills Section */}
+                    <section className="w-full max-w-3xl col-span-2">
+                        {skills && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Core Skills</h3>
+                            <div className="flex flex-wrap justify-center gap-3">
+                                {skills.map((skill, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-4 py-2 card text-sm font-medium"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div></>)}
+                    </section>
 
-                {/* Tools Section */}
-                <section className="w-full max-w-3xl col-span-2">
-                    {tools && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Tools</h3>
-                    <div className="flex flex-wrap justify-center gap-3">
-                        {tools.map((tool, index) => (
-                            <span
-                                key={index}
-                                className="px-4 py-2 card text-sm font-medium"
-                            >
-                                {tool}
-                            </span>
-                        ))}
-                    </div></>)}
-                </section>
+                    {/* Tools Section */}
+                    <section className="w-full max-w-3xl col-span-2">
+                        {tools && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Tools</h3>
+                            <div className="flex flex-wrap justify-center gap-3">
+                                {tools.map((tool, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-4 py-2 card text-sm font-medium"
+                                    >
+                                        {tool}
+                                    </span>
+                                ))}
+                            </div></>)}
+                    </section>
                 </div>
                 {/* Photo Gallery Section */}
-                <section>
-                    <h3 className="text-2xl font-bold text-accent-secondary mb-6">Photo Gallery</h3>
-                     {/* <div className="flex flex-col items-center md:flex-row justify-center gap-4 max-w-3xl">
-                    {carouselItems.map((item, index) => (
-                            <div key={index}>
-                            <img src={item.src} alt={item.caption} className="w-full md:w-1/4 h-32" />
-                            <caption className="inline-block">{item.description}</caption>
-                            </div>
-                    ))}</div> */}
+                <section className="w-full max-w-4xl">
+                    <h3 className={"text-2xl font-bold text-accent-secondary mb-6" + (carouselItems.length > 0 ? "" : " hidden")}>Photo Gallery</h3>
                     <Carousel />
                 </section>
                 {/* Experience Section */}
@@ -98,5 +91,5 @@ export default function BioSection() {
             </div>
         </>
     )
-    
+
 }
