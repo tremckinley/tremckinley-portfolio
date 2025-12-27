@@ -11,10 +11,10 @@ export default function BioSection() {
                     I'm a Technical Business Analyst who helps organizations transform <b>ideas</b> into <b>solutions</b>. I specialize in translating business needs into clear technical direction.
                 </p>
                 <p>
-                    I have over 6 years of experience unlocking innovation with cross-functional communication and thoughtful problem-solving. My background in education, I.T., and local government has shaped my priorities towards building solutions that last, even with limited resources.
+                    I have over six years of experience unlocking innovation with cross-functional communication and thoughtful problem-solving. My background in education, I.T., and local government has shifted my priorities towards user-centered solutions that last, even with limited resources.
                 </p>
                 <p>
-                    As a lifelong learner, I am constantly adapting my skillset. I love finding ways to become a better team player, data specialist, and problem-solver. Beyond my day-to-day work, I'm committed to helping grow the Memphis Tech community, building passion projects with code, and raising a family.
+                    As a lifelong learner, I am constantly adapting my skillset. I love finding ways to become a better team player, data specialist, and problem-solver. Beyond my day-to-day work, I'm committed to helping grow my local tech community, building passion projects with code, and raising a family.
                 </p>
             </section>
 
