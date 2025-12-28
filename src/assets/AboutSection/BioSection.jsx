@@ -88,7 +88,7 @@ export default function BioSection() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
                     >
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i className="fa-brands fa-linkedin-in"></i>
                         LinkedIn Profile
                     </a>
                     {/* Resume View */}
@@ -98,7 +98,7 @@ export default function BioSection() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
                     >
-                        <i class="fa-solid fa-file-pdf"></i>
+                        <i className="fa-solid fa-file-pdf"></i>
                         View Resumé
                     </a>
                     {/* GitHub Profile */}
@@ -108,7 +108,7 @@ export default function BioSection() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
                     >
-                        <i class="fa-brands fa-github"></i> GitHub Profile
+                        <i className="fa-brands fa-github"></i> GitHub Profile
                     </a>
                 </div>
 

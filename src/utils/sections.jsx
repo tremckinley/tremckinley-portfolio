@@ -12,5 +12,4 @@ import BioSection from "../assets/AboutSection/BioSection";
 export const sections = [
   { id: "bio", Component: BioSection, title: "About", className: "flex justify-center" },
   { id: "blog", Component: BlogSection, title: "Blog", className: "w-full" },
-  //{ id: "projects", Component: ProjectSection, title: "Projects", className: "w-full" },
 ];
