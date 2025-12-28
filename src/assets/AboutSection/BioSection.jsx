@@ -103,7 +103,7 @@ export default function BioSection() {
                     </a>
                     {/* GitHub Profile */}
                     <a
-                        href="github.com/tremaine-mckinley"
+                        href="https://github.com/tremckinley"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
