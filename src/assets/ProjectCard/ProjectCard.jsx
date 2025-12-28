@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
   const { project } = props;
 
   return (
-    <div className="card card-hover flex flex-col m-2 md:flex-row md:max-w-lg overflow-clip bg-white max-w-3xl shadow-[peru]">
+    <div className="card-hover border-2 border-accent-secondary flex flex-col m-2 md:flex-row md:max-w-lg overflow-clip bg-white max-w-3xl shadow-[peru]">
       <div className=" border-b accent flex">
         <a href={project.liveUrl} target="_blank" className="w-full overflow-clip">
           <motion.img

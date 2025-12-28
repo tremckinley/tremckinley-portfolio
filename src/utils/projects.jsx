@@ -5,7 +5,7 @@ export const projects = [
       tools: ["react", "css3", "figma"],
       repoUrl: null,
       liveUrl: "https://space-baby-bay.vercel.app/",
-      imageUrl: "/space-baby-bay-vercel-app-1024x768desktop-b8d584 (1).png"
+      imageUrl: "projectCovers/space-baby-bay-vercel-app-1024x768desktop-b8d584 (1).png"
 
     },
     {
@@ -14,7 +14,7 @@ export const projects = [
       tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/breathing-exercies",
       liveUrl: "https://breathing-exercises.vercel.app/",
-      imageUrl: "/focusbreathing.png"
+      imageUrl: "projectCovers/focusbreathing.png"
     },
     {
       title: "Fright Night Game",
@@ -22,7 +22,7 @@ export const projects = [
       tools: ["html5", "css3", "js"],
       repoUrl: "https://github.com/tremckinley/datenightgame/tree/fright_night",
       liveUrl: "https://frightnightgame.vercel.app/",
-      imageUrl: "/frightnight.png"
+      imageUrl: "projectCovers/frightnight.png"
     },
     {
       title: "Rica's Plants Capstone",
@@ -30,7 +30,7 @@ export const projects = [
       tools: ["react", "css3", "figma"],
       repoUrl: "https://github.com/tremckinley/react-formula-capstone",
       liveUrl: "https://tremckinley-reactformula-capstone.vercel.app/",
-      imageUrl: "/react_formula.png"
+      imageUrl: "projectCovers/react_formula.png"
     },
     {
       title: "Recipe Page - Frontend Mentor",

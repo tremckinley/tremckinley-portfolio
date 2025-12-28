@@ -13,6 +13,15 @@ export default function ViewSelector(props) {
                     {title}
                 </button>
                 ))}
+                <button key="contact" className={"text-center px-4 py-2 text-black flex-1 transition-colors duration-200"}
+                    onClick={async () => {
+                        state.setView("bio")
+                        await new Promise((resolve) => setTimeout(resolve, 100))
+                        document.getElementById("contact-me").scrollIntoView({ behavior: "smooth" })
+                    }}
+                >
+                    Contact
+                </button>
             </div>
         </nav>
     )

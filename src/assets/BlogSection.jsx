@@ -1,5 +1,5 @@
 import BlogPost from "./BlogPost/BlogPost";
-import { blogs } from "./blogs";
+import { blogs } from "../utils/blogs";
 
 
 export default function BlogSection() {

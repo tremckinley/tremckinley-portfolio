@@ -1,4 +1,3 @@
-import { Download } from "lucide-react"
 import { skills, tools, experiences } from "../../utils/resumeItems"
 import { carouselItems } from "../../utils/carouselItems"
 import Carousel from "../Carousel/Carousel"
@@ -58,8 +57,9 @@ export default function BioSection() {
                     <h3 className={"text-2xl font-bold text-accent-secondary mb-6" + (carouselItems.length > 0 ? "" : " hidden")}>Photo Gallery</h3>
                     <Carousel />
                 </section>
+                
                 {/* Experience Section */}
-                <section className="w-full max-w-3xl">
+                {/* <section className="w-full max-w-3xl">
                     <h3 className="text-2xl font-bold text-accent-secondary mb-6">Key Experience</h3>
                     <div className="flex flex-col gap-4">
                         {experiences.map((exp, index) => (
@@ -76,17 +76,41 @@ export default function BioSection() {
                             </div>
                         ))}
                     </div>
-                </section>
+                </section> */}
 
                 {/* Resume Download Button */}
-                <a
-                    href="/resume.pdf"
-                    download
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
-                >
-                    <Download size={20} />
-                    Download Resume
-                </a>
+                <h3 id="contact-me" className="text-2xl font-bold text-accent-secondary">Contact Me</h3>
+                <div className="flex flex-col md:flex-row gap-4">
+                    {/* LinkedIn Profile */}
+                    <a
+                        href="https://linkedin.com/in/tremaine-mckinley"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        LinkedIn Profile
+                    </a>
+                    {/* Resume View */}
+                    <a
+                        href="/tremaine_mckinley_resume_2026.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                        <i class="fa-solid fa-file-pdf"></i>
+                        View Resumé
+                    </a>
+                    {/* GitHub Profile */}
+                    <a
+                        href="github.com/tremaine-mckinley"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-accent-secondary text-white font-semibold rounded-lg hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                        <i class="fa-brands fa-github"></i> GitHub Profile
+                    </a>
+                </div>
 
             </div>
         </>
