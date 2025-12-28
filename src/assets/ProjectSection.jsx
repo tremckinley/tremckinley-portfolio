@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard/ProjectCard";
-import { projects } from "./projects";
+import { projects } from "../utils/projects";
 
 export default function ProjectSection() {
     return (

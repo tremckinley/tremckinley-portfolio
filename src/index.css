@@ -27,6 +27,18 @@
     color: var(--accent-secondary)
 }
 
+#hero-statement {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--accent-secondary);
+}
+#hero-statement span {
+    color: var(--accent);
+}
+
+#about-me p {
+    margin-bottom: 1rem;
+}
 
 .selected-view {
     border-bottom: 3px solid var(--accent);

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { galleryPhotos } from "../../utils/galleryPhotos"
 
-export default function Carousel({ items }) {
+export default function Carousel({ items = galleryPhotos }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
@@ -19,7 +20,7 @@ export default function Carousel({ items }) {
         setCurrentIndex(slideIndex);
     };
 
-    // Auto-advance logic (optional, can be removed if strictly manual)
+    // Auto-advance logic
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
@@ -30,25 +31,33 @@ export default function Carousel({ items }) {
     if (!items || items.length === 0) return null;
 
     return (
-        <div className="max-w-[600px] h-[400px] w-full m-auto mb-24  relative group">
-            <div
-                style={{ backgroundImage: `url(${items[currentIndex].src})` }}
-                className="w-full h-full rounded-2xl bg-center bg-cover duration-500 shadow-xl"
-            >
-                            
+        <div className="w-full m-auto">
+            {/* Carousel Container with Arrows */}
+            <div className="flex items-center justify-center gap-4">
+                {/* Left Arrow */}
+                <button
+                    onClick={prevSlide}
+                    className="group flex-shrink-0 text-2xl rounded-full md:w-12 md:h-12 w-8 h-8 flex items-center justify-center bg-gray-200 text-gray-700 cursor-pointer hover:bg-accent hover:text-white transition-all"
+                >
+                    <i className="fa-solid fa-chevron-left text-sm md:text-base text-accent-secondary group-hover:text-white"></i>
+                </button>
+
+                {/* Image Container */}
+                <div
+                    className="h-48 md:h-64 lg:h-80 flex-1 w-auto bg-center bg-cover duration-500 shadow-xl"
+                    style={{ backgroundImage: `url(${items[currentIndex].src})` }}
+                />
+
+                {/* Right Arrow */}
+                <button
+                    onClick={nextSlide}
+                    className="group flex-shrink-0 text-2xl rounded-full md:w-12 md:h-12 w-8 h-8 flex items-center justify-center bg-gray-200 text-gray-700 cursor-pointer hover:bg-accent hover:text-white transition-all"
+                >
+                    <i className="fa-solid fa-chevron-right text-sm md:text-base text-accent-secondary group-hover:text-white"></i>
+                </button>
             </div>
 
-            {/* Left Arrow */}
-            <div className="hidden group-hover:flex absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full w-10 h-10 flex items-center justify-center bg-black/40 text-white cursor-pointer hover:bg-black/50 transition-all">
-                <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
-            </div>
-
-            {/* Right Arrow */}
-            <div className="hidden group-hover:flex absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full w-10 h-10 flex items-center justify-center bg-black/40 text-white cursor-pointer hover:bg-black/50 transition-all">
-                <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
-            </div>
-
-            <p className="text-center font-bold">{items[currentIndex].caption}</p>
+            <p className="text-center font-semibold">{items[currentIndex].caption}</p>
 
             {/* Dots */}
             <div className="flex top-4 justify-center py-2">
@@ -56,7 +65,7 @@ export default function Carousel({ items }) {
                     <div
                         key={slideIndex}
                         onClick={() => goToSlide(slideIndex)}
-                        className={`text-sm cursor-pointer mx-1 transition-colors ${currentIndex === slideIndex ? 'text-blue-500' : 'text-gray-300'
+                        className={`text-xs md:text-sm cursor-pointer mx-1 transition-colors ${currentIndex === slideIndex ? 'text-accent' : 'text-gray-300'
                             }`}
                     >
                         <i className="fa-solid fa-circle"></i>
