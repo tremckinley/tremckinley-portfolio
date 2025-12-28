@@ -1,16 +1,6 @@
 export const blogs = [
     //Add to the top to keep order from newest to oldest.
     {
-        title: "Crash Course: Web Accessibility",
-        desc: "My \"Design and Code\" discussion on Web Accessibility, why it matters, and how to get started.",
-        date: "August 2025",
-        tags: ["Web Accessibility", "WCAG", "ADA", "a11y"],
-        imageUrl: "/blogCovers/Crash_Course_Cover.jpg",
-        linkUrl: "https://www.linkedin.com/pulse/crash-course-web-accessibility-tremaine-mckinley-n4qqe/",
-        linkText: "Read on LinkedIn",
-        imageAlt: "Title image of Presentation slide. Crash Course: Web Accessibility",
-    },
-    {
         title: "From Questions, to Prompts, to Queries: How AI Is Helping Enhance My Reports",
         desc: "A description of how I used AI and my own problem-solving skills to eliminate a backlogged reporting bug.",
         date: "May 2025",
@@ -29,6 +19,16 @@ export const blogs = [
         linkUrl: "https://www.linkedin.com/pulse/bureaucracy-i-can-hack-you-too-tremaine-mckinley-1n7de/",
         linkText: "Read on LinkedIn",
         imageAlt: "A screenshot of the LinkedIn article thumbnail, a door with gears and keyholes.",
+    },
+    {
+        title: "Crash Course: Web Accessibility",
+        desc: "My \"Design and Code\" discussion on Web Accessibility, why it matters, and how to get started.",
+        date: "August 2025",
+        tags: ["Web Accessibility", "WCAG", "ADA", "a11y"],
+        imageUrl: "/blogCovers/Crash_Course_Cover.jpg",
+        linkUrl: "https://www.linkedin.com/pulse/crash-course-web-accessibility-tremaine-mckinley-n4qqe/",
+        linkText: "Read on LinkedIn",
+        imageAlt: "Title image of Presentation slide. Crash Course: Web Accessibility",
     },
     {
         title: "Here's how I passed the DTOT (2024)",

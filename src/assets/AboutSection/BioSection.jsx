@@ -1,5 +1,5 @@
 import { skills, tools, experiences } from "../../utils/resumeItems"
-import { carouselItems } from "../../utils/carouselItems"
+import { galleryPhotos } from "../../utils/galleryPhotos"
 import Carousel from "../Carousel/Carousel"
 
 export default function BioSection() {
@@ -54,7 +54,7 @@ export default function BioSection() {
                 </div>
                 {/* Photo Gallery Section */}
                 <section className="w-full max-w-4xl">
-                    <h3 className={"text-2xl font-bold text-accent-secondary mb-6" + (carouselItems.length > 0 ? "" : " hidden")}>Photo Gallery</h3>
+                    <h3 className={"text-2xl font-bold text-accent-secondary mb-6" + (galleryPhotos.length > 0 ? "" : " hidden")}>Photo Gallery</h3>
                     <Carousel />
                 </section>
                 
