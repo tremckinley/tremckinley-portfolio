@@ -1,6 +1,8 @@
 import { skills, tools, experiences } from "../../utils/resumeItems"
 import { galleryPhotos } from "../../utils/galleryPhotos"
 import Carousel from "../Carousel/Carousel"
+import BlogPost from "../BlogPost/BlogPost"
+import { blogs as articles } from "../../utils/blogs"
 
 export default function BioSection() {
 
@@ -52,12 +54,21 @@ export default function BioSection() {
                             </div></>)}
                     </section>
                 </div>
+                {/* Featured Articles Section */}
+                <section className="w-full col-span-2">
+                        {articles && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Featured Articles</h3>
+                            <div className="flex flex-wrap justify-center gap-3 text-sm">
+                                {articles.filter((article) => article.featured === true).map((article, index) => (
+                                    <BlogPost key={article.title} blog={article} />
+                                ))}
+                            </div></>)}
+                </section>
                 {/* Photo Gallery Section */}
                 <section className="w-full max-w-4xl">
                     <h3 className={"text-2xl font-bold text-accent-secondary mb-6" + (galleryPhotos.length > 0 ? "" : " hidden")}>Photo Gallery</h3>
                     <Carousel />
                 </section>
-                
+
                 {/* Experience Section */}
                 {/* <section className="w-full max-w-3xl">
                     <h3 className="text-2xl font-bold text-accent-secondary mb-6">Key Experience</h3>
@@ -79,7 +90,8 @@ export default function BioSection() {
                 </section> */}
 
                 {/* Resume Download Button */}
-                <h3 id="contact-me" className="text-2xl font-bold text-accent-secondary">Contact Me</h3>
+                <footer id="footer">
+                <h3 id="contact-me" className="text-2xl font-bold text-accent-secondary mb-6">Contact Me</h3>
                 <div className="flex flex-col md:flex-row gap-4">
                     {/* LinkedIn Profile */}
                     <a
@@ -111,7 +123,7 @@ export default function BioSection() {
                         <i className="fa-brands fa-github"></i> GitHub Profile
                     </a>
                 </div>
-
+                </footer>
             </div>
         </>
     )

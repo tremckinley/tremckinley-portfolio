@@ -89,5 +89,5 @@ body {
 }
 
 .blog-card{
-    @apply rounded-none max-w-sm;
+    @apply rounded-none max-w-md text-center;
 }

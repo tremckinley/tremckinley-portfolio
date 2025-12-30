@@ -17,11 +17,11 @@ export default function ViewSelector(props) {
                     onClick={async () => {
                         state.setView("bio")
                         await new Promise((resolve) => setTimeout(resolve, 100))
-                        document.getElementById("contact-me").scrollIntoView({ behavior: "smooth" })
+                        document.getElementById('footer').scrollIntoView({ behavior: "smooth" })
                     }}
                 >
                     Contact
-                </button>
+                </button>``
             </div>
         </nav>
     )

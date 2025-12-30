@@ -17,7 +17,7 @@ export default function BlogPost(props) {
                 </a>
             </div>
             <div className="p-2">
-                <h4 className="heading-text text-gray-800 pt-1 w-full max-w-fit border-b text-xl">{blog.title}</h4>
+                <h4 className="heading-text text-gray-800 pt-1 w-full border-b text-xl">{blog.title}</h4>
                 <p className="text-sm italic">{blog.date}</p>
                 <h5 className="my-2">{blog.desc}</h5>
                 <a href={blog.linkUrl} className="hover:text-accent hover:underline mt-4 my-2 w-full text-gray-600" target="_blank" rel="noopener noreferrer">

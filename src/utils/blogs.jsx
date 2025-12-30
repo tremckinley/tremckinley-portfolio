@@ -9,6 +9,7 @@ export const blogs = [
         linkUrl: "https://www.linkedin.com/pulse/from-question-prompt-query-how-ai-helping-enhance-my-reports-mb0me/",
         linkText: "Read on LinkedIn",
         imageAlt: "A screenshot of the LinkedIn article thumbnail, a man and android fist-bumping.",
+        featured: true
     },
     {
         title: "Bureaucracy: If I Can Hack It, You Can Too.",
@@ -19,6 +20,7 @@ export const blogs = [
         linkUrl: "https://www.linkedin.com/pulse/bureaucracy-i-can-hack-you-too-tremaine-mckinley-1n7de/",
         linkText: "Read on LinkedIn",
         imageAlt: "A screenshot of the LinkedIn article thumbnail, a door with gears and keyholes.",
+        featured: true
     },
     {
         title: "Crash Course: Web Accessibility",
@@ -29,6 +31,7 @@ export const blogs = [
         linkUrl: "https://www.linkedin.com/pulse/crash-course-web-accessibility-tremaine-mckinley-n4qqe/",
         linkText: "Read on LinkedIn",
         imageAlt: "Title image of Presentation slide. Crash Course: Web Accessibility",
+        featured: false
     },
     {
         title: "Here's how I passed the DTOT (2024)",
@@ -39,5 +42,6 @@ export const blogs = [
         linkUrl: "https://www.linkedin.com/pulse/heres-how-i-passed-dtot-2024-tremaine-mckinley-3rsee/",
         linkText: "Read on LinkedIn",
         imageAlt: "A screenshot of the LinkedIn article thumbnail, a red, white, and blue banner.",
+        featured: false
     }
 ]
