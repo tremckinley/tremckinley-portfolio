@@ -1,6 +1,6 @@
-import AboutSection from "../assets/AboutSection/AboutSection";
-import ProjectSection from "../assets/ProjectSection";
-import BlogSection from "../assets/BlogSection";
+//import AboutSection from "../assets/AboutSection/AboutSection";
+//import ProjectSection from "../assets/ProjectSection";
+//import BlogSection from "../assets/BlogSection";
 import BioSection from "../assets/AboutSection/BioSection";
 
 // Tabbed sections of portfolio
