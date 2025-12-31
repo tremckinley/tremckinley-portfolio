@@ -1,7 +1,7 @@
 export const blogs = [
     //Add to the top to keep order from newest to oldest.
     {
-        title: "From Questions, to Prompts, to Queries: How AI Is Helping Enhance My Reports",
+        title: "AI-powered SQL Optimization",
         desc: "A description of how I used AI and my own problem-solving skills to eliminate a backlogged reporting bug.",
         date: "May 2025",
         tags: ["technical debt", "problem solving", "government"],
@@ -12,7 +12,7 @@ export const blogs = [
         featured: true
     },
     {
-        title: "Bureaucracy: If I Can Hack It, You Can Too.",
+        title: "Navigating Bureaucracy to Upgrade a Customer Portal",
         desc: "How I used the tactics I learned to make an impact on a local government project in my first year on the job.",
         date: "February 2025",
         tags: ["government", "leadership", "project management", "book"],
