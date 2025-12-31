@@ -21,7 +21,7 @@ export default function ViewSelector(props) {
                     }}
                 >
                     Contact
-                </button>``
+                </button>
             </div>
         </nav>
     )
