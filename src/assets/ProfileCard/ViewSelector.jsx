@@ -4,10 +4,10 @@ export default function ViewSelector(props) {
     const { state } = props;
 
     return (
-        <nav className=" mt-4 w-full max-w-full flex overflow-clip md:justify-start justify-center">
-            <div className="flex w-full md:max-w-96 md:ml-32 text-lg">
+        <nav className=" mt-4 w-full max-w-full flex overflow-clip justify-center">
+            <div className="flex w-full md:max-w-96 text-lg">
                 {sections.map(({ id, title }) => (
-                <button key={id} className={"text-center px-4 py-2 text-black flex-1 transition-colors duration-200 " + (state.view == id ? "selected-view" : "border-b border-gray-200 hover:bg-gray-50")}
+                <button key={id} className={"text-center px-4 py-2 text-black flex-1 transition-colors duration-200 w-fit " + (state.view == id ? "selected-view" : "border-b border-gray-200 hover:bg-gray-50")}
                     onClick={() => state.setView(id)}
                 >
                     {title}

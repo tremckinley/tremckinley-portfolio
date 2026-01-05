@@ -56,7 +56,7 @@ export default function BioSection() {
                 </div>
                 {/* Featured Articles Section */}
                 <section className="w-full col-span-2">
-                        {articles && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Featured Articles</h3>
+                        {articles && (<><h3 className="text-2xl font-bold text-accent-secondary mb-6">Featured Work</h3>
                             <div className="flex flex-wrap justify-center gap-3 text-sm">
                                 {articles.filter((article) => article.featured === true).map((article, index) => (
                                     <BlogPost key={article.title} blog={article} />

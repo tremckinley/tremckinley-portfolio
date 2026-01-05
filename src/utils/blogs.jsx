@@ -1,6 +1,17 @@
 export const blogs = [
     //Add to the top to keep order from newest to oldest.
     {
+        title: "Case Study: Deploying a Citizen Application Wizard for Local Government",
+        desc: "Simplifying a complex government intake processes to help everyday residents navigate permitting and licensure applications from home.",
+        date: "December 2025",
+        tags: ["government", "leadership", "project management"],
+        imageUrl: "/blogCovers/GWIZ_Case_Study.png",
+        linkUrl: "https://gamma.app/docs/Case-Study-Deploying-a-Citizen-Application-Wizard-for-Local-Government-y1ls4nnlk5i4z4d",
+        linkText: "Read on Gamma",
+        imageAlt: "A screenshot of the Gamma article thumbnail, a man successfully submitting a form online.",
+        featured: true
+    },
+    {
         title: "AI-powered SQL Optimization",
         desc: "A description of how I used AI and my own problem-solving skills to eliminate a backlogged reporting bug.",
         date: "May 2025",
@@ -20,7 +31,7 @@ export const blogs = [
         linkUrl: "https://www.linkedin.com/pulse/bureaucracy-i-can-hack-you-too-tremaine-mckinley-1n7de/",
         linkText: "Read on LinkedIn",
         imageAlt: "A screenshot of the LinkedIn article thumbnail, a door with gears and keyholes.",
-        featured: true
+        featured: false
     },
     {
         title: "Crash Course: Web Accessibility",

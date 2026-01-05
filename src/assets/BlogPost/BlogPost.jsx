@@ -17,10 +17,10 @@ export default function BlogPost(props) {
                 </a>
             </div>
             <div className="p-2">
-                <h4 className="heading-text text-gray-800 pt-1 w-full border-b text-xl">{blog.title}</h4>
+                <a href={blog.linkUrl} target="_blank" rel="noopener noreferrer"><h4 className="heading-text text-gray-800 pt-1 w-full border-b text-xl hover:text-accent-secondary hover:underline">{blog.title}</h4></a>
                 <p className="text-sm italic">{blog.date}</p>
                 <h5 className="my-2">{blog.desc}</h5>
-                <a href={blog.linkUrl} className="hover:text-accent hover:underline mt-4 my-2 w-full text-gray-600" target="_blank" rel="noopener noreferrer">
+                <a href={blog.linkUrl} className="hover:text-accent-secondary hover:underline mt-4 my-2 w-full text-gray-600" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-up-right-from-square text-xs m-1"></i> {blog.linkText}
                 </a>
             </div>
